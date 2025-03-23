@@ -1,5 +1,6 @@
 :root{
   --primary-color :#d10024;
+  --secondary-color:#15161d;
 }
 .dark-toggle {
   background-color: transparent;
@@ -15,11 +16,11 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   i {
-    color: #15161d;
+    color: var(--secondary-color);
   }
 }
 .dark-mode {
-  background-color: #15161d;
+  background-color: var(--secondary-color);
   a {
     color: #fff;
   }
@@ -27,7 +28,7 @@
     color: var(--primary-color);
   }
   #navigation {
-    background-color: #15161d;
+    background-color: var(--secondary-color);
     .active a {
       color: var(--primary-color);
     }
@@ -42,7 +43,7 @@
       background-color: transparent;
     }
     .product-body {
-      background-color: #15161d;
+      background-color: var(--secondary-color);
       .product-rating i {
         background-color: transparent;
       }
