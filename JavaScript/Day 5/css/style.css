@@ -1,11 +1,23 @@
 body {
   width: 99%;
+  padding: 20px;
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #container {
+  width: 60%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
+  justify-self: center;
+  background-color: #ccc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 input {
   width: 60%;
@@ -20,46 +32,50 @@ input {
 #add-btn {
   width: 50%;
   cursor: pointer;
-  background-color: green;
-  padding: 0.5rem 0.75rem;
+  background-color: #04AA6D;
+  padding: 0.75rem;
   color: #fff;
   font-weight: bold;
-  border: 2px solid #fff;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border: 2px solid #03c980;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 #add-btn:hover {
-  background-color: rgb(2, 167, 2);
+  background-color: #03c980;
 }
 table {
   width: 60%;
   margin: 10px;
-  thead{
-    text-align: center;
-    font-weight: bold;
+  background-color: #fff;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+tr:hover{
+  background-color: #eee;
+}
+th{
+  background-color: #04AA6D;
+  color: #fff;
+}
+.delete-btn {
+  cursor: pointer;
+  color: red;
+}
+.delete-btn:hover {
+  text-decoration-line: underline;
+  -moz-text-decoration-line: underline;
+}
+p {
+  color: red;
+  span {
+    display: none;
   }
-  td {
-    border: 1px solid black;
-    margin: 0;
-    padding: 10px;
-  }
 }
-.delete-btn{
-    cursor: pointer;
-    color: red;
-    
-}
-.delete-btn:hover{
-        text-decoration-line: underline;
-        -moz-text-decoration-line: underline;
-}
-p{
-    color: red;
-    span{
-        display: none;
-    }
-}
-
