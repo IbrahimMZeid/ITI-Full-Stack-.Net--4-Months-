@@ -1,0 +1,23 @@
+#circle{
+    /* width: 100vw;
+    height: 90vh; */
+    padding: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+#circle div{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.traffic-text{
+    text-align: center;
+    font-size: 2rem;
+}
