@@ -1,0 +1,76 @@
+body {
+  background-color: #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+  width: 80%;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 10px;
+  background-color: #fff;
+  justify-self: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+form {
+  width: 90%;
+}
+label {
+  display: inline-block;
+  width: 60px;
+}
+input[type="text"],
+input[type="password"],
+select {
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+input[type="check"],
+input[type="radio"] {
+  margin: 10px;
+}
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  padding: 0.5rem 0.75rem;
+  margin: 10px;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+#submit-btn {
+  background-color: #03c980;
+}
+#reset-btn {
+  background-color: red;
+}
+span {
+  display: none;
+  width: 100%;
+  text-align: end;
+  font-size: small;
+  color: red;
+  font-weight: bold;
+}
+/* span#gender-span {
+  display: inline-block;
+} */

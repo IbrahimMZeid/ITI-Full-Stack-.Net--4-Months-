@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator Game</title>
+    <link rel="stylesheet" href="css/t3.css">
+    </link>
+</head>
+
+<body>
+    <div id="container">
+        <div >
+            <label for="name-in">Name</label>
+            <input type="text" name="name" id="name-in"><br>
+            <span id="name-span">Name is Required<br></span>
+            <label for="email-in">Email</label>
+            <input type="text" name="email-in" id="email-in"><br>
+            <span id="email-span">Email is not valid<br></span>
+            <label for="pass-in">Password</label>
+            <input type="password" name="pass-in" id="pass-in"><br>
+            <span id="pass-span">Password mut be 8 chars at least<br></span>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male" id="male-radio"><label for="male-radio">Male</label>
+            <input type="radio" name="gender" value="female" id="female-radio"><label for="female-radio">Female</label><br>
+            <span id="gender-span">Please select your gender<br></span>
+            <label>Sports</label>
+            <input type="checkbox" name="sport" id="tennis-check"><label for="tennis-check">Tennis</label>
+            <input type="checkbox" name="sport" id="running-check"><label for="running-check">Running</label>
+            <input type="checkbox" name="sport" id="football-check"><label for="football-check">Football</label><br>
+            <span id="sport-span">Please select at least 2 sports<br></span>
+            <label for="country-select">Country</label>
+            <select name="country-select" id="country-select">
+                <option value="egypt">Egypt</option>
+                <option value="egypt">Saudi Arabia</option>
+                <option value="egypt">USA</option>
+                <option value="egypt">Italy</option>
+            </select>
+            <span id="country-span">Please select your country<br></span><br>
+            <div class="btn-container">
+                <button id="submit-btn" onclick="submitData()">Submit</button>
+                <button id="reset-btn" onclick="resetFields()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/t3.js"></script>
+</body>
+
+</html>
