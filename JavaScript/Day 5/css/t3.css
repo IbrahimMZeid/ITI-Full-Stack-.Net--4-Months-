@@ -35,6 +35,7 @@ select {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  border-color: #eee;
 }
 input[type="check"],
 input[type="radio"] {

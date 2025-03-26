@@ -41,8 +41,10 @@ function nameChange() {
   var name_span = document.getElementById("name-span");
   if (name_in.value.length == 0) {
     name_span.style.display = "inline-block";
+    name_in.style.borderColor = "red";
     return false;
   } else {
+    name_in.style.borderColor = "#eee";
     name_span.style.display = "none";
   }
   return true;
@@ -53,8 +55,10 @@ function emailChange() {
   var rgx = /[a-zA-Z0-9]{3,}@[a-z]{3,}.com/g;
   if (!rgx.test(email_in.value)) {
     email_span.style.display = "inline-block";
+    email_in.style.borderColor = "red";
     return false;
   } else {
+    email_in.style.borderColor = "#eee";
     email_span.style.display = "none";
   }
   return true;
@@ -64,8 +68,10 @@ function passChange() {
   var pass_span = document.getElementById("pass-span");
   if (pass_in.value.length < 8) {
     pass_span.style.display = "inline-block";
+    pass_in.style.borderColor = "red";
     return false;
   } else {
+    pass_in.style.borderColor = "#eee";
     pass_span.style.display = "none";
   }
   return true;
