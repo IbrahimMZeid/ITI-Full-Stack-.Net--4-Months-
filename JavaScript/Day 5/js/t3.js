@@ -79,6 +79,7 @@ function passChange() {
 
 function genderChange() {
   var gender_span = document.getElementById("gender-span");
+  console.log(gender.checked);
   for (indx in gender) {
     if (gender[indx].checked) {
       gender_span.style.display = "none";
@@ -105,12 +106,10 @@ function sportChange() {
 
 function countryChange() {
   var country_span = document.getElementById("country-span");
-  for (con in country) {
-    if (country[con].selected) {
+    if (country.value) {
       country_span.style.display = "none";
       return true;
     }
-  }
   country_span.style.display = "inline-block";
   return false;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="css/t1.css">
+</head>
+<body>
+    <div id="container">
+        <label for="name-in">Enter Your Name</label>
+        <input type="text" name="name-in" id="name-in"><br>
+        <label for="age-in">Enter Your Age</label>
+        <input type="number" name="age-in" id="age-in">
+        <label>Select your Gender</label><br>
+        <input type="radio" name="gender" id="gender-male" value="1">
+        <img src="images/1.jpg"/>
+        <input type="radio" name="gender" id="gender-female" value="2">
+        <img src="images/2.jpg"/><br>        
+        <label for="color-select">Select Your Favorite Color</label>
+        <select name="color-select" id="color-select">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select><br>
+        <button id="register-btn" onclick="registerData()">Register</button>
+    </div>
+    <script src="js/t1.js"></script>
+</body>
+</html>
