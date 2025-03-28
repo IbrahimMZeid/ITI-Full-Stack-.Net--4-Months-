@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    
+    <!-- autoplay , muted , loop , src="media/Anitek_-_Komorebi.ogg" -->
+    <section class="media">
+        <audio controls>
+            <source src="media/audio1.ogg">
+            <source src="media/audio1.mp3">
+            Your browser does not support audio
+        </audio>
+    
+        <button onclick="nextAud()">Next</button>
+        <button onclick="prevAud()">Prev</button>
+        <button id="play-btn" onclick="playAud()">Play</button>
+        <!-- <button onclick="pauseAud()">Pause</button> -->
+        <button onclick="stopAud()">Stop</button>
+        <button onclick="muteAud()">mute</button>
+        volume:
+        <input type="range" name="" id="volumeInp" min="0" max="1" step="0.1">
+        time :
+        <input type="range" name="" id="timeInp" min="0" step="1">
+    
+        Speed :
+        <select id="speed">
+            <option value=".5">.5</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+        </select>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
