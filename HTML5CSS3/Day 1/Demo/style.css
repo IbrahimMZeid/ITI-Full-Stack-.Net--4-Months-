@@ -268,22 +268,19 @@ main .offer {
 }
 .category-card {
   display: inline-block;
-  position: relative;
   width: 24.5%;
   margin: 50px 0;
-  animation-name: slide-in;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  transform: translateY(600px);
 }
 
-@keyframes slide-in {
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    top: 300px;
+    transform: translateY(600px);
   }
   to {
     opacity: 1;
-    top: 0px;
+    transform: translateY(0px);
   }
 }
 

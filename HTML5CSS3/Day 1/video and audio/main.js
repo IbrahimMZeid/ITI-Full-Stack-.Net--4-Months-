@@ -3,6 +3,9 @@ var volumeInp = document.getElementById("volumeInp");
 var timeInp = document.getElementById("timeInp");
 var speed = document.getElementById("speed");
 var playBtn = document.getElementById("play-btn");
+var play_img = playBtn.children[0];
+var mute_img = document.getElementById("mute-img");
+
 audio.addEventListener("loadedmetadata", loadDuration);
 var audioNum = 1;
 function nextAud() {
@@ -17,22 +20,25 @@ function loadAdu() {
   audio.src = "media/audio" + audioNum + ".mp3";
   loadDuration();
   playAud();
-  playBtn.innerText = "Pause";
+  play_img.src = "icons/pause.png";
 }
 function playAud() {
   if (audio.paused) {
-    playBtn.innerText = "Pause";
+    play_img.src = "icons/pause.png";
     audio.play();
   } else {
-    playBtn.innerText = "Play";
+    play_img.src = "icons/play.png";
     audio.pause();
   }
 }
 function stopAud() {
+  play_img.src = "icons/play.png";
   audio.load();
   audio.pause();
 }
 function muteAud() {
+  if (audio.muted) mute_img.src = "icons/unmute.png";
+  else mute_img.src = "icons/mute.png";
   audio.muted = !audio.muted;
 }
 

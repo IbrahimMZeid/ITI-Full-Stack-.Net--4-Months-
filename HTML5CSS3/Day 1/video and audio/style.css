@@ -1,18 +1,26 @@
-/* ============= Form ================= */
-
-.form,
 .media {
-  width: 80%;
-  margin: 100px auto;
+  padding: 20px;
+  width: 75%;
+  margin: 50px;
+  text-align: center;
+}
+#timeInp {
+  width: 75%;
+}
+img {
+  width: 20px;
+}
+button,
+select {
+  margin: 5px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #006b1b;
+  border: none;
+  border-radius: 45%;
 }
 
-.form input {
-  display: block;
-  margin: 5px 0px;
-  padding: 20px 50px;
-}
-
-.form button,
-.media button {
-  padding: 20px 40px;
+select {
+  border-radius: 10px;
 }
