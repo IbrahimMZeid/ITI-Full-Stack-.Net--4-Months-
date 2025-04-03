@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="assets/fontawesome-free-6.7.2-web/css/solid.min.css">
+    <link href="assets/fontawesome-free-6.7.2-web/css/fontawesome.min.css" rel="stylesheet" /> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Fation</title>
+</head>
+
+<body>
+    <!-- ============== preloader ============== -->
+    <section class="preloader">
+        <section class="preloader-circle">
+
+        </section>
+        <img src="img/logo.png" alt="">
+    </section>
+    <!--============== Header ==============-->
+    <header class="">
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <nav>
+            <ui>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Gallary</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ui>
+            <a href="#" class="visit-us">Visit Us</a>
+        </nav>
+        <section class="clear"></section>
+    </header>
+    <!-- ============== Hero Section ================== -->
+    <section class="hero-section">
+        <section class="light-background"></section>
+        <section class="hero-content">
+            <h1>Discover true <br>personalization.</h1>
+            <span>Made to Measure Dress Shirts</span>
+        </section>
+    </section>
+
+    <!-- =============== Offers Section ================== -->
+    <main>
+        <section class="main-content">
+            <span>What We Offer</span>
+            <h2>What we offer of Clients</h2>
+        </section>
+        <section class="offer">
+            <section class="offer-img">
+                <section class="img-container">
+                    <img src="img/offers1.jpg" alt="">
+                </section>
+            </section>
+            <section class="offer-content">
+                <span>1</span>
+                <h3><a href="#">Perfect Body Measurements</a></h3>
+                <p>Aorem Epsum Solor sit amet, consectetur adipiscing elited dsfo eiusmod tecsmpor</p>
+                <a href="#"><i class="fa fa-arrow-right-long"></i></a>
+            </section>
+        </section>
+        <section class="offer">
+            <section class="offer-img">
+                <section class="img-container">
+                    <img src="img/offers2.jpg" alt="">
+                </section>
+            </section>
+            <section class="offer-content">
+                <span>2</span>
+                <h3><a href="#">Premioum Style Cutting-out</a></h3>
+                <p>Aorem Epsum Solor sit amet, consectetur adipiscing elited dsfo eiusmod tecsmpor</p>
+                <a href="#"><i class="fa fa-arrow-right-long"></i></a>
+            </section>
+        </section>
+        <section class="offer">
+
+            <section class="offer-img">
+                <section class="img-container">
+                    <img src="img/offers3.jpg" alt="">
+                </section>
+            </section>
+            <section class="offer-content">
+                <span>3</span>
+                <h3><a href="#">Restoration with Sincerity</a></h3>
+                <p>Aorem Epsum Solor sit amet, consectetur adipiscing elited dsfo eiusmod tecsmpor</p>
+                <a href="#"><i class="fa fa-arrow-right-long"></i></a>
+            </section>
+        </section>
+    </main>
+
+    <!-- =============== History Section ================== -->
+    <section class="history-section">
+        <section class="video">
+            <a href="#"><i class="fa fa-play"></i></a>
+        </section>
+        <section class="content">
+            <h2>history</h2>
+            <section class="content-body">
+                <h3>Our History</h3>
+                <p>Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum reeut cupidatatfugiat nulla
+                    pariatur. Excepteur sintxsdfas occaecat, cupidatat non proidente sunt in culpa qui officia deserunt,
+                    mollit anim id est laborum. Sedut des perspiciatis unde omnis iste.</p>
+                <a href="#" class="btn">About Us</a>
+            </section>
+        </section>
+    </section>
+
+    <!-- =============== Client Feedback Section ================== -->
+    <section class="feedback-section">
+        <section class="feedback-heading">
+            <span>Client Feedback</span>
+            <h2>Our Work For Clients</h2>
+        </section>
+        <section class="img-slider">
+            <img src="img/speech-client1.jpg" alt="">
+            <img src="img/speech-client1.jpg" alt="">
+            <img src="img/speech-client1.jpg" alt="">
+            <img src="img/speech-client1.jpg" alt="">
+            <img src="img/speech-client1.jpg" alt="">
+            <img src="img/speech-client1.jpg" alt="">
+        </section>
+        <section class="slider-arrow">
+            <button href="" class="prev" onclick="prev(event)"><i class="fa fa-less-than"></i></button>
+            <button href="" class="next" onclick="next(event)"><i class="fa fa-greater-than"></i></button>
+            <div class="clear"></div>
+        </section>
+        <section class="img-num">
+            <button class="selected-img" onclick="imgNum(event)" value="1">1</button>
+            <button onclick="imgNum(event)" value="2">2</button>
+            <button onclick="imgNum(event)" value="3">3</button>
+            <button onclick="imgNum(event)" value="4">4</button>
+            <button onclick="imgNum(event)" value="5">5</button>
+            <button onclick="imgNum(event)" value="6">6</button>
+        </section>
+    </section>
+
+    <!-- =============== Location Section ================== -->
+    <section class="location-section">
+        <section class="location-content">
+            <span>Our Location</span>
+            <h2>Visit Our Tailor</h2>
+            <p>71 Madison Ave 10013 New York, 914-309701, 914-329211,<br>
+                reservations@laurent.com, office@laurent.com</p>
+            <div class="opening-hours">
+                <p>Opening hours:</p>
+                <p>Mon – Thu: 10.00 am – 01:00 am</p>
+                <p>Fri – Sun: 10:00 am – 02:00 am</p>
+            </div>
+            <section class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
+            </section>
+        </section>
+        <section class="location-img">
+            <section class="location-offer">
+                <p>10% Off</p>
+                <a href="#" class="btn">Get Offer</a>
+            </section>
+        </section>
+    </section>
+    <!-- =============== Testimonia Section ================== -->
+    <section class="testimonia-section">
+        <h2>Testimonia</h2>
+        <section class="testimonia-slider">
+            <section class="slider">
+                <section class="slider-body">
+                    <img src="img/testimonial.png" alt="">
+                    <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                    </p>
+                </section>
+                <section class="slider-body">
+                    <img src="img/testimonial.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+                    </p>
+                </section>
+            </section>
+            <section class="slide-num">
+                <button onclick="slideShow(value)" value="0">1</button>
+                <button onclick="slideShow(value)" value="1">2</button>
+            </section>
+        </section>
+    </section>
+    <!-- =============== Footer Section ================== -->
+    <footer>
+        <section class="footer-img">
+        </section>
+        <section class="footer-content">
+            <h2>The joy of dressing<br>
+                is an art
+            </h2>
+            <!-- <hr /> -->
+            <section class="footer-lists">
+
+                <section class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>71 Madison Ave 10013 New York,</li>
+                        <li>914-309701, 914-329211,</li>
+                        <li>reservations@laurent.com,</li>
+                        <li>office@laurent.com</li>
+                    </ul>
+                </section>
+                <section class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Our History</li>
+                        <li>Contact</li>
+                    </ul>
+                </section>
+                <section class="footer-social">
+                    <h3>Social</h3>
+                    <section class="social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-solid fa-globe"></i></a>
+                    </section>
+                </section>
+            </section>
+            <section class="footer-foot">
+                <p>Copyright ©2025 All rights reserved | This template is made with ❤ by
+                    <a href="#">Colorlib</a>
+                </p>
+            </section>
+        </section>
+    </footer>
+    <button class="to-upbtn" onclick="goToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
