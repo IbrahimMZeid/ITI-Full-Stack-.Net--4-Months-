@@ -118,8 +118,8 @@
     }
     .nav__links {
       .links__list {
+        display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
         gap: 10px;
         .list__item {
           .item__link {
@@ -129,6 +129,7 @@
       }
     }
     .nav--btn {
+      flex-wrap: wrap;
       .btn,
       .btn__login {
         font-size: 1rem;
@@ -212,6 +213,10 @@
 }
 
 @media (max-width: 350px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
   .hero {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(22, 75px);
