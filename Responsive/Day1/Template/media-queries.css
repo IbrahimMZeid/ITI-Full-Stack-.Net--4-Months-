@@ -111,8 +111,8 @@
 
 @media (max-width: 550px) {
   .header {
-    .header__logo{
-      .logo__img{
+    .header__logo {
+      .logo__img {
         height: 5rem;
       }
     }
@@ -196,12 +196,13 @@
       font-size: 1.8rem;
     }
     .footer__form {
+      width: 95%;
       .form__email::placeholder {
         font-size: 1.1rem;
       }
       .form__btn {
         font-size: 1.05rem;
-        width: 25%;
+        width: 30%;
       }
     }
     .footer__paragraph {
@@ -250,12 +251,12 @@
       grid-row: 21 / span 2;
     }
   }
-  .footer{
-    .footer__form{
+  /* .footer {
+    .footer__form {
       width: 90%;
-      .form__btn{
+      .form__btn {
         width: 35%;
       }
     }
-  }
+  } */
 }
