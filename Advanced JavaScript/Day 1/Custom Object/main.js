@@ -10,7 +10,7 @@ Custom.prototype.getSetCen = function () {
       data[key] = this[key];
     }
   }
-  for (let key in this) {
+  for (let key in data) {
     Object.defineProperty(this, key, {
       set: function (value) {
         data[key] = value;
@@ -35,3 +35,5 @@ var cust2 = new Custom("SD-11", "SV", "125 st.");
 cust2.getSetCen();
 cust2.id = "SD-12";
 console.log(cust2.id);
+console.log(cust1);
+console.log(cust2);
