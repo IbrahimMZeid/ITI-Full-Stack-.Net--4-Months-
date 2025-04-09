@@ -1,0 +1,9 @@
+body{
+    background-color: #ccc;
+}
+.container{
+    background-color: #fff;
+}
+#book-data-form{
+    display: none;
+}
