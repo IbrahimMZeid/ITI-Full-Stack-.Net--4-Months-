@@ -1,0 +1,12 @@
+body {
+  background-color: #ccc;
+}
+.container {
+  background-color: #fff;
+}
+#book-data-form,#book-table {
+  display: none;
+}
+.btn{
+    margin: 0 5px;
+}
