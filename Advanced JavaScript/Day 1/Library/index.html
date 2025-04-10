@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Task</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-5 p-5" id="book-num-form">
+        <h2 class="text-center">Enter Book Number</h2>
+        <form class="row justify-content-center">
+            <div class="col-6 d-flex flex-column justify-content-center">
+                <div class="mb-3">
+                    <label for="book-num-input" class="form-label">Book Number</label>
+                    <input type="number" min="1" max="100" class="form-control" id="book-num-input" required>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="getBooks()">Ok</button>
+            </div>
+        </form>
+    </div>
+    <div class="container my-5 p-5" id="book-data-form">
+        <h2 class="text-center">Enter Books Data</h2>
+        <form class="row" onkeydown="if(event.keyCode === 13) {
+     return false;}">
+            <div class="row justify-content-center" id="book-num-form">
+                <div class="col-5">
+                    <div class="mb-3">
+                        <label for="book-name-input" class="form-label">Book Name</label>
+                        <input type="text" class="form-control" id="book-name-input" required>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="mb-3">
+                        <label for="book-price-input" class="form-label">Book Price</label>
+                        <input type="number" class="form-control" id="book-price-input" required>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="mb-3">
+                        <label for="book-date-input" class="form-label">Book Date</label>
+                        <input type="date" class="form-control" id="book-date-input" required>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="mb-3">
+                        <label for="book-author-name-input" class="form-label">Author Name</label>
+                        <input type="text" class="form-control" id="book-author-name-input" required>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="mb-3">
+                        <label for="book-author-email-input" class="form-label">Author Email</label>
+                        <input type="email" class="form-control" id="book-author-email-input" required>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button type="submit" class="col-5 btn btn-primary" onclick="getBooksData()">Ok</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container my-5 p-5" id="book-table">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">author Name</th>
+                    <th scope="col">author Email</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
