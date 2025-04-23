@@ -13,9 +13,7 @@ window.onload = () => {
     } else if (location.href.search("index.html") != -1) homeProduct(10);
     else if (location.href.search("product.html") != -1) displayProduct();
     else if (location.href.search("checkout.html") != -1) checkout();
-    else if (location.href.search("carts.html") != -1) {
-      displayCarts();
-    }
+    else if (location.href.search("carts.html") != -1) displayCarts();
   }
 };
 function logout() {
@@ -292,7 +290,7 @@ async function displayProduct() {
 let total;
 /** ================ display carts */
 function displayCarts() {
-  total = 0;        // reset total
+  total = 0; // reset total
   const carts = JSON.parse(localStorage.getItem("carts")) || [];
   const cartContainer = document.querySelector(".carts-container");
   cartContainer.innerHTML = "";
@@ -366,24 +364,28 @@ function displayCarts() {
   });
 
   const checkoutBtn = document.querySelector("#checkout-btn");
-  checkoutBtn.addEventListener("click", () => checkout());
+  checkoutBtn.addEventListener("click", () => {
+    if (!localStorage.getItem("carts")) {
+      alert("Your cart is empty, please add some products");
+      location.href = "ourproducts.html";
+    } else location.href = "checkout.html";
+  });
   const totalPrice = document.querySelector(".total-price");
   totalPrice.innerText = total;
 }
-/** ================ checkout method that delete carts from localStorage 
+/** ================ checkout method that delete carts from localStorage
  * for future changes send request to server
  *  */
 function checkout() {
   if (!localStorage.getItem("carts")) {
     alert("Your cart is empty, please add some products");
     location.href = "ourproducts.html";
-    return;
   } else {
     localStorage.removeItem("carts");
     cart_indicator.style.display = "none";
   }
 }
-/** =============== add product quantity to cart 
+/** =============== add product quantity to cart
  * quantity can be positive for add quantity to specific product or negative for reduce quantity
  * remove product from cart if quantity is 0
  */
