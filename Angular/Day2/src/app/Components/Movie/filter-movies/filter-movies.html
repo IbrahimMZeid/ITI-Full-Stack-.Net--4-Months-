@@ -1,0 +1,27 @@
+<div class="filter-controls card shadow-sm mt-4">
+  <div class="card-body py-3">
+    <div class="row align-items-center g-3">
+      <div class="col-md-6">
+        <div class="form-floating">
+          <select class="form-select" (change)="filterMovies()" [(ngModel)]="filterCategory" name="filterCategory">
+            <option value="All">All Genres</option>
+            @for (category of Categories; track $index) {
+            <option [value]="category">{{category}}</option>
+            }
+          </select>
+          <label>Filter by Genre</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <div class="form-floating">
+            <input type="search" class="form-control" placeholder="Search movies..." (input)="filterMovies()"
+              [(ngModel)]="filterName">
+            <label for="imageUrl">Search..</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

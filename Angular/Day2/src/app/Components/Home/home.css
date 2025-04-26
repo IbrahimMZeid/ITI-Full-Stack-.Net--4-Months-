@@ -1,0 +1,8 @@
+:root {
+  --main-color: #e5bf4a;
+  --dark-color: #0a0a0a;
+}
+html {
+  height: 100vh;
+  background-color: var(--dark-color);
+}

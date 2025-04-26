@@ -1,0 +1,28 @@
+footer {
+  background-color: var(--dark-color);
+  color: #fff;
+  padding: 2rem 0;
+}
+.nav-link {
+  padding: 0 12px !important;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+.social-footer {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #ffffff2f;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out !important;
+}
+.social-footer:hover {
+  color: var(--main-color);
+  border: 1px solid #e5be4a2f;
+}
+.phone-footer:hover {
+  text-decoration: underline !important;
+}

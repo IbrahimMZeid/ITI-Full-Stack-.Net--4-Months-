@@ -1,0 +1,25 @@
+<div class="movie-card card h-100 shadow-sm" [ngClass]="{
+  'alert alert-danger p-0':movie.Category == 'Horror'
+  }">
+  <div class="movie-poster-container">
+    <img src="{{movie.Image}}" class="card-img-top" alt="{{movie.Name}}" style="object-fit: cover; height: 300px;">
+    <div class="movie-rating-badge">
+      <span class="badge {{movie.Rate > 5 ? 'bg-warning' : 'bg-danger text-white'}} text-dark">
+        {{movie.Rate}}/10
+      </span>
+    </div>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{movie.Name}}</h5>
+    <p class="card-text text-muted small">{{movie.Description}}</p>
+    <div class="movie-meta">
+      <span class="badge bg-info me-2">{{movie.Category}}</span>
+      <small class="text-muted">Dir. {{movie.Author}}</small>
+    </div>
+  </div>
+  <div class="card-footer bg-transparent">
+    <button class="btn btn-outline-danger w-100" (click)="deleteMovie()">
+      <i class="bi bi-trash me-2"></i>Remove
+    </button>
+  </div>
+</div>

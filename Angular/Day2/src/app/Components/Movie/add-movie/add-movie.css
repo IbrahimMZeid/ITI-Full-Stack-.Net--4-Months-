@@ -1,0 +1,36 @@
+.movie-form-card {
+  background-color: rgba(0, 0, 0, 0.418);
+
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  .card-header {
+    padding: 1.25rem;
+  }
+}
+label {
+  color: #fff;
+}
+select,
+input,
+textarea {
+  background-color: #59575f4b !important;
+  border: none;
+  color: #fff !important;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  ::placeholder {
+    color: #fff !important;
+    background-color: #59575f4b;
+  }
+  option {
+    background-color: #5d5d5eab !important;
+  }
+}
+.input-group-text {
+  background-color: #59575f4b !important;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+}

@@ -1,0 +1,6 @@
+.nav-link:hover {
+  color: var(--main-color) !important;
+}
+.nav a {
+  font-size: 20px;
+}

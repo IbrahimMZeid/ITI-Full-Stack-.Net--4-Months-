@@ -1,0 +1,18 @@
+.btn-nav{
+  padding: 10px 20px !important;
+}
+.nav-link {
+  padding: 0 12px !important;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+.btn-nav {
+  text-decoration: none !important;
+}
+.btn-nav:hover {
+  color: #fff !important;
+  background-color: var(--main-color) !important;
+}

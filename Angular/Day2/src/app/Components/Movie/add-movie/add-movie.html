@@ -1,0 +1,65 @@
+<div class="movie-form-card card shadow-lg">
+  <div class="card-header bg-primary bg-opacity-25 text-white">
+    <h2 class="card-title text-center mb-0">Movie Station</h2>
+  </div>
+
+  <div class="card-body p-4">
+    <form (ngSubmit)="addMovie()" class="row g-3">
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="name" placeholder="Enter Name" [(ngModel)]="movieNme" name="name"
+            required>
+          <label for="name">Movie Name</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input class="form-control" id="desc" placeholder="Enter Description" [(ngModel)]="movieDesc" name="desc" />
+          <label for="desc">Description</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="author" placeholder="Enter Author" [(ngModel)]="movieAuthor"
+            name="author">
+          <label for="author">Director</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="number" class="form-control" id="rate" placeholder="0-10" min="1" max="10"
+            [(ngModel)]="movieRate" name="rate">
+          <label for="rate">Rating (0-10)</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-floating">
+          <input type="url" class="form-control" id="imageUrl" placeholder="Image URL" [(ngModel)]="movieImage"
+            name="imageUrl">
+          <label for="imageUrl">Poster URL</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-floating">
+          <select class="form-select" id="category" [(ngModel)]="movieCategory" name="category">
+            @for (category of Categories; track $index) {
+            <option [value]="category">{{category}}</option>
+            }
+          </select>
+          <label for="category">Genre</label>
+        </div>
+      </div>
+
+      <div class="col-12 text-center mt-4">
+        <button type="submit" class="btn btn-primary px-4 py-2">
+          <i class="bi bi-plus-circle me-2"></i>Add Movie
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

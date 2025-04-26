@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --main-color: #e5bf4a;
+  --dark-color: #0a0a0a;
+}
+* {
+  font-family: "Jost", sans-serif;
+  transition: all 0.3s ease-in-out !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poiret One", cursive;
+}
+h2 {
+  font-size: 2.5rem !important;
+}
+p {
+  font-weight: 300;
+}
+html {
+  height: 100vh;
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-custom-dark {
+  background-color: var(--dark-color) !important;
+}
+.border-main {
+  border: 2px solid var(--main-color) !important;
+}
+.outline-main {
+  outline-color: var(--main-color) !important;
+}
+.text-main {
+  color: var(--main-color) !important;
+}
+.btn-custom {
+  text-decoration: none !important;
+  background-color: var(--main-color) !important;
+  border: 2px solid var(--main-color) !important;
+  padding: 12px 25px !important;
+  color: #000 !important;
+}
+.btn-custom:hover {
+  background-color: transparent !important;
+  color: var(--main-color) !important;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--main-color);
+}

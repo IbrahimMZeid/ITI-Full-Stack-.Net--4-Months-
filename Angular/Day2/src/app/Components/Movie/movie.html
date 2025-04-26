@@ -1,0 +1,26 @@
+<div class="home-app-container">
+  <div class="movie-app-container">
+    <app-add-movie [Categories]="Categories" (addMovieEvent)="addMovie($event)"></app-add-movie>
+    <!-- Filter Section -->
+  <app-filter-movies [Categories]="Categories" (filterMovieEvent)="filterMovies($event)"></app-filter-movies>
+
+    <!-- Movie Cards -->
+    <div class="movie-grid mt-4">
+      @if (filteredMovies.length > 0) {
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @for (movie of filteredMovies; track $index) {
+        <div class="col">
+          <movie-card-movies [movie]="movie" [index]="$index" (deleteMovieEvent)="deleteMovie($event)" />
+        </div>
+        }
+      </div>
+      } @else {
+      <div class="empty-state alert alert-info text-center">
+        <i class="bi bi-film display-5"></i>
+        <h4 class="mt-3">No movies found</h4>
+        <p>Try adding a movie or adjusting your filters</p>
+      </div>
+      }
+    </div>
+  </div>
+</div>

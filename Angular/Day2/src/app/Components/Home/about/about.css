@@ -1,0 +1,7 @@
+.main-about {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+.about-title {
+  color: var(--main-color);
+}

@@ -1,0 +1,23 @@
+<header class="bg-custom-dark text-white p-3 sticky-top">
+  <ul class="nav justify-content-center">
+    <li class="nav-item mx-5">
+      <a class="nav-link text-white" href="#" (click)="changeTab('home')">Home</a>
+    </li>
+    <li class="nav-item mx-5">
+      <a class="nav-link text-white" href="#" (click)="changeTab('movie')">Movie</a>
+    </li>
+    <li class="nav-item mx-5">
+      <a class="nav-link text-white" href="#" (click)="changeTab('input')">Input</a>
+    </li>
+
+  </ul>
+</header>
+@if(selectedTab == 'home'){
+<app-home />
+}
+@else if(selectedTab == 'movie'){
+<app-movie />
+}
+@else{
+<app-input-task />
+}

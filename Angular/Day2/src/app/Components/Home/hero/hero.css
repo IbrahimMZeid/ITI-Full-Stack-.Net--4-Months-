@@ -1,0 +1,12 @@
+.main-hero {
+  background-image: url("/img/h1_hero1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  div {
+    height: 100%;
+    h2 {
+      font-size: 4.3rem !important;
+    }
+  }
+}

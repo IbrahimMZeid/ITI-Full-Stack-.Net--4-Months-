@@ -1,0 +1,6 @@
+@if(!isRegister) {
+<app-register (newUserEvent)="register($event)" />
+}
+@else{
+<app-profile [user]="user" (logoutEvent)="isRegister = false" />
+}
